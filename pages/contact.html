@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Book a real estate photography shoot with Aptus Media — Fort Worth & DFW. 24-hour turnaround."/>
+  <title>Book a Shoot | Aptus Media</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-eyebrow">
+    <div class="hero-eyebrow-line" style="width:28px;height:1px;background:var(--blue);"></div>
+    <span style="font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue-light);">Get In Touch</span>
+  </div>
+  <h1 class="page-hero-title">Book a<br/>Shoot</h1>
+  <p class="page-hero-sub">Fill out the form and we'll confirm your booking within a few hours. We typically respond same day, Mon–Sat.</p>
+</section>
+
+<!-- ══════════════════════════════════════
+     CONTACT LAYOUT
+══════════════════════════════════════ -->
+<section class="contact-layout">
+
+  <!-- LEFT: Info -->
+  <div>
+    <h2 class="contact-info-title">Let's make your listing <em>stand out.</em></h2>
+
+    <div class="contact-detail fade-up">
+      <div class="contact-detail-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.59 3.4 2 2 0 0 1 3.56 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <div>
+        <div class="contact-detail-label">Phone</div>
+        <div class="contact-detail-value">Fort Worth, TX — DFW Area</div>
+      </div>
+    </div>
+
+    <div class="contact-detail fade-up">
+      <div class="contact-detail-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div>
+        <div class="contact-detail-label">Email</div>
+        <div class="contact-detail-value"><a href="mailto:hello@aptusmedia.com" style="color:var(--blue-light);">hello@aptusmedia.com</a></div>
+      </div>
+    </div>
+
+    <div class="contact-detail fade-up">
+      <div class="contact-detail-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div>
+        <div class="contact-detail-label">Response Time</div>
+        <div class="contact-detail-value">Same day · Mon–Sat</div>
+      </div>
+    </div>
+
+    <div class="contact-detail fade-up">
+      <div class="contact-detail-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div>
+        <div class="contact-detail-label">Service Area</div>
+        <div class="contact-detail-value">Fort Worth · Dallas · Full DFW Metroplex</div>
+      </div>
+    </div>
+
+    <div class="response-badge fade-up">
+      <p>📸 <strong style="color:var(--white);">24-hour turnaround guaranteed.</strong> Photos delivered by the next business day or your next shoot is 20% off.</p>
+    </div>
+
+    <div style="margin-top:40px; padding-top:32px; border-top:1px solid var(--border);">
+      <div style="font-size:10px; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; color:var(--white-muted); margin-bottom:16px;">Accepted payment</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <span style="font-size:12px; padding:6px 14px; border:1px solid var(--border); color:var(--white-dim);">Credit / Debit Card</span>
+        <span style="font-size:12px; padding:6px 14px; border:1px solid var(--border); color:var(--white-dim);">Zelle</span>
+        <span style="font-size:12px; padding:6px 14px; border:1px solid var(--border); color:var(--white-dim);">Venmo</span>
+        <span style="font-size:12px; padding:6px 14px; border:1px solid var(--border); color:var(--white-dim);">Invoice / Check</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Form -->
+  <div>
+    <div class="contact-form fade-up" id="booking-form-container">
+      <div style="font-size:10px; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; color:var(--white-muted); margin-bottom:28px;">Booking Request</div>
+
+      <form id="booking-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="fname">First Name *</label>
+            <input class="form-input" id="fname" type="text" placeholder="Sarah" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lname">Last Name *</label>
+            <input class="form-input" id="lname" type="text" placeholder="Mitchell" required/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address *</label>
+          <input class="form-input" id="email" type="email" placeholder="sarah@kwrealty.com" required/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="phone">Phone Number</label>
+          <input class="form-input" id="phone" type="tel" placeholder="(817) 555-0000"/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="address">Property Address *</label>
+          <input class="form-input" id="address" type="text" placeholder="123 Main St, Fort Worth, TX 76104" required/>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="sqft">Square Footage</label>
+            <select class="form-select" id="sqft">
+              <option value="">Select range</option>
+              <option>Under 1,000 sq ft</option>
+              <option>1,000 – 2,000 sq ft</option>
+              <option>2,000 – 3,500 sq ft</option>
+              <option>3,500 – 5,000 sq ft</option>
+              <option>5,000+ sq ft</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="package">Package *</label>
+            <select class="form-select" id="package" required>
+              <option value="">Select package</option>
+              <option>The Standard — $149</option>
+              <option>The Pro — $229</option>
+              <option>The Premium — $399</option>
+              <option>Not sure — need a quote</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="addons">Add-Ons (Optional)</label>
+          <select class="form-select" id="addons">
+            <option value="">None</option>
+            <option>Twilight Shot (+$79)</option>
+            <option>Video Walkthrough (+$129)</option>
+            <option>Social Media Reels (+$69)</option>
+            <option>Rush Delivery (+$49)</option>
+            <option>Multiple add-ons — I'll explain below</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="date">Preferred Shoot Date *</label>
+          <input class="form-input" id="date" type="date" required/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="notes">Additional Notes</label>
+          <textarea class="form-textarea" id="notes" placeholder="Gate code, access instructions, anything specific about the property..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Send Booking Request →</button>
+      </form>
+
+      <!-- Success state -->
+      <div class="form-success" id="form-success">
+        <div style="width:56px; height:56px; border-radius:50%; background:rgba(21,101,192,0.15); border:1px solid var(--blue); display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-light)" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 style="font-family:var(--font-display); font-size:1.6rem; font-weight:300; margin-bottom:12px;">Request Received</h3>
+        <p style="font-size:13px; color:var(--white-dim); line-height:1.8;">We'll confirm your booking within a few hours. Check your email — a summary is on its way.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="../js/components.js"></script>
+<script>
+  renderNav('contact');
+  renderFooter('..');
+  initScrollAnimations();
+
+  // Set minimum date to today
+  const dateInput = document.getElementById('date');
+  if (dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.min = today;
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    // Gather form data
+    const data = {
+      name: document.getElementById('fname').value + ' ' + document.getElementById('lname').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      address: document.getElementById('address').value,
+      sqft: document.getElementById('sqft').value,
+      pkg: document.getElementById('package').value,
+      addons: document.getElementById('addons').value,
+      date: document.getElementById('date').value,
+      notes: document.getElementById('notes').value,
+    };
+
+    // For now — show success state
+    // When you're ready to connect a form backend (Formspree, Netlify Forms, etc.)
+    // replace this with an actual fetch/POST call
+    console.log('Booking request:', data);
+
+    document.getElementById('booking-form').style.display = 'none';
+    document.getElementById('form-success').classList.add('show');
+  }
+</script>
+</body>
+</html>
