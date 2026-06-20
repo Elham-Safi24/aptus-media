@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Book a real estate photography shoot with Aptus Media — Fort Worth & DFW."/>
+<title>Book a Shoot | Aptus Media</title>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="icon" href="../images/logo.png"/>
+</head>
+<body>
+<div id="nav-ph"></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-eyebrow"><div class="page-eyebrow-line"></div><span>Get In Touch</span></div>
+  <h1 class="page-title">Book a<br/>Shoot</h1>
+  <p class="page-sub">Fill out the form and we'll confirm your booking within a few hours. We respond same day, Mon–Sat.</p>
+</section>
+
+<section class="contact-layout">
+  <div>
+    <div class="contact-detail fade-up">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div>
+        <div class="contact-label">Email</div>
+        <div class="contact-value"><a href="mailto:hello@aptusmedia.net" style="color:var(--dim)">hello@aptusmedia.net</a></div>
+      </div>
+    </div>
+    <div class="contact-detail fade-up">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div>
+        <div class="contact-label">Response Time</div>
+        <div class="contact-value">Same day · Mon–Sat</div>
+      </div>
+    </div>
+    <div class="contact-detail fade-up">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div>
+        <div class="contact-label">Service Area</div>
+        <div class="contact-value">Fort Worth · Dallas · DFW Metroplex</div>
+      </div>
+    </div>
+    <div class="contact-detail fade-up">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <div>
+        <div class="contact-label">Delivery</div>
+        <div class="contact-value">Photos delivered within 24 hours</div>
+      </div>
+    </div>
+
+    <div style="margin-top:36px;padding:20px 22px;background:var(--dark2);border:1px solid var(--border);">
+      <div style="font-size:9px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">Accepted Payment</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <span style="font-size:12px;padding:5px 12px;border:1px solid var(--border);color:var(--dim);">Zelle</span>
+        <span style="font-size:12px;padding:5px 12px;border:1px solid var(--border);color:var(--dim);">Cash App</span>
+        <span style="font-size:12px;padding:5px 12px;border:1px solid var(--border);color:var(--dim);">Venmo</span>
+        <span style="font-size:12px;padding:5px 12px;border:1px solid var(--border);color:var(--dim);">PayPal</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form fade-up delay-1" id="form-wrap">
+    <div style="font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:28px;">Booking Request</div>
+    <form id="bform" onsubmit="submitForm(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="fn">First Name *</label>
+          <input class="form-input" id="fn" type="text" placeholder="Sarah" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="ln">Last Name *</label>
+          <input class="form-input" id="ln" type="text" placeholder="Mitchell" required/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="em">Email *</label>
+        <input class="form-input" id="em" type="email" placeholder="sarah@kwrealty.com" required/>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="ph">Phone</label>
+        <input class="form-input" id="ph" type="tel" placeholder="(817) 555-0000"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="addr">Property Address *</label>
+        <input class="form-input" id="addr" type="text" placeholder="123 Main St, Fort Worth, TX" required/>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="sqft">Square Footage</label>
+        <select class="form-select" id="sqft">
+          <option value="">Select range</option>
+          <option>Under 1,000 sq ft</option>
+          <option>1,000–2,000 sq ft</option>
+          <option>2,000–3,500 sq ft</option>
+          <option>3,500–5,000 sq ft</option>
+          <option>5,000+ sq ft</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="dt">Preferred Shoot Date *</label>
+        <input class="form-input" id="dt" type="date" required/>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="notes">Additional Notes</label>
+        <textarea class="form-textarea" id="notes" placeholder="Gate code, access instructions, or anything specific about the property..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send Booking Request →</button>
+    </form>
+    <div class="form-success" id="fsuccess">
+      <div style="width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--white)" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;margin-bottom:12px;">Request Received</h3>
+      <p style="font-size:12px;color:var(--muted);line-height:1.8;">We'll confirm your booking within a few hours. Check your email for a summary.</p>
+    </div>
+  </div>
+</section>
+
+<div id="footer-ph"></div>
+<script src="../js/main.js"></script>
+<script>
+renderNav('contact');renderFooter('..');initAnimations();
+const di=document.getElementById('dt');if(di)di.min=new Date().toISOString().split('T')[0];
+function submitForm(e){
+  e.preventDefault();
+  document.getElementById('bform').style.display='none';
+  document.getElementById('fsuccess').classList.add('show');
+}
+</script>
+</body>
+</html>

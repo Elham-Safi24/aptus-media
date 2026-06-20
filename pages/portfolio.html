@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Aptus Media portfolio — Real estate photography across Fort Worth and the DFW area."/>
+<title>Portfolio | Aptus Media</title>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="icon" href="../images/logo.png"/>
+</head>
+<body>
+<div id="nav-ph"></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-eyebrow">
+    <div class="page-eyebrow-line"></div>
+    <span>Our Work</span>
+  </div>
+  <h1 class="page-title">The Portfolio</h1>
+  <p class="page-sub">Every image shot with a Sony A7 IV and processed with full HDR merge and professional retouching.</p>
+</section>
+
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filter('all',this)">All</button>
+  <button class="filter-btn" onclick="filter('interior',this)">Interior</button>
+  <button class="filter-btn" onclick="filter('exterior',this)">Exterior</button>
+  <button class="filter-btn" onclick="filter('bedroom',this)">Bedroom</button>
+  <button class="filter-btn" onclick="filter('garden',this)">Garden</button>
+</div>
+
+<div class="portfolio-grid" id="pg">
+  <div class="portfolio-item" data-cat="interior" onclick="lb('../images/port-1.jpg','Upstairs Lounge')">
+    <img src="../images/port-1.jpg" alt="Upstairs lounge"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="interior" onclick="lb('../images/port-2.jpg','Loft / TV Room')">
+    <img src="../images/port-2.jpg" alt="Loft TV room"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="exterior" onclick="lb('../images/port-3.jpg','Exterior Front')">
+    <img src="../images/port-3.jpg" alt="Exterior front"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="garden" onclick="lb('../images/port-4.jpg','Backyard Pergola')">
+    <img src="../images/port-4.jpg" alt="Backyard pergola"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="bedroom" onclick="lb('../images/port-5.jpg','Master Bedroom')">
+    <img src="../images/port-5.jpg" alt="Master bedroom"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="interior" onclick="lb('../images/port-6.jpg','Sitting Room')">
+    <img src="../images/port-6.jpg" alt="Sitting room"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="garden" onclick="lb('../images/port-7.jpg','Backyard')">
+    <img src="../images/port-7.jpg" alt="Backyard"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="interior" onclick="lb('../images/port-8.jpg','En-Suite Bathroom')">
+    <img src="../images/port-8.jpg" alt="Bathroom"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="garden" onclick="lb('../images/port-9.jpg','Garden')">
+    <img src="../images/port-9.jpg" alt="Garden"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="bedroom" onclick="lb('../images/port-10.jpg','Bedroom')">
+    <img src="../images/port-10.jpg" alt="Bedroom"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="bedroom" onclick="lb('../images/port-11.jpg','Bedroom with Garden View')">
+    <img src="../images/port-11.jpg" alt="Bedroom garden view"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+  <div class="portfolio-item" data-cat="exterior" onclick="lb('../images/port-12.jpg','Front Entrance')">
+    <img src="../images/port-12.jpg" alt="Front entrance"/>
+    <div class="portfolio-item-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLb()">
+  <button class="lightbox-close" onclick="closeLb()">×</button>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()"/>
+</div>
+
+<div class="divider"></div>
+<section class="cta-wrap">
+  <h2 class="cta-text fade-up">Ready to make your<br/><em>listing look this good?</em></h2>
+  <a href="contact.html" class="btn-primary fade-up delay-1">Book a Shoot →</a>
+</section>
+<div class="divider"></div>
+
+<div id="footer-ph"></div>
+<script src="../js/main.js"></script>
+<script>
+renderNav('portfolio');renderFooter('..');initAnimations();
+function lb(src,alt){document.getElementById('lb-img').src=src;document.getElementById('lb-img').alt=alt;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
+function closeLb(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();});
+function filter(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.portfolio-item').forEach(el=>{
+    const show=cat==='all'||el.dataset.cat===cat;
+    el.style.opacity=show?'1':'0.12';
+    el.style.pointerEvents=show?'auto':'none';
+    el.style.transition='opacity .3s';
+  });
+}
+</script>
+</body>
+</html>
